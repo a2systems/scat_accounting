@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <record id="scat_account_move_form" model="ir.ui.view">
+            <field name="name">scat.account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"></field>
+	    <field name="arch" type="xml">
+		    <xpath expr="//notebook" position="inside">
+			    <page string="SCAT" >
+				    <br />
+				    <group>
+					    <field name="folio_interno" />
+					    <field name="folio_fiscal" />
+					    <field name="rfc" />
+				    </group>
+			    </page>
+		    </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
