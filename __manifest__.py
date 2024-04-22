@@ -10,6 +10,7 @@
     ],
     'data': [
              'views/account_move_view.xml',
+             'views/account_account_view.xml',
     ],
     'test': [
     ],
